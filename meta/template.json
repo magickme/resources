@@ -1,0 +1,864 @@
+{
+    "id": "4334",
+    "name": "Blog Resources Page",
+    "mobile": true,
+    "notes": "Version 1.44, QA changes II",
+    "syntax": 4,
+    "version": 1.44,
+    "style": {
+        "replacements": [
+            {
+                "type": "font", 
+                "name": "Font", 
+                "find": "'Roboto'"
+            },
+            {
+                "type": "color",
+                "name": "Body Text",
+                "find": "#444446"
+            },
+            {
+                "type": "color",
+                "name": "Body Background",
+                "find": "#fffffe"
+            },
+            {
+                "type": "color",
+                "name": "Body Links", 
+                "find": "#444444"
+            },
+            {
+                "type": "color",
+                "name": "Body Links Hover",
+                "find": "#979797"
+            },
+            {
+                "type": "color",
+                "name": "Header Top Background",
+                "find": "#fffeff" 
+            },
+            {
+                "type": "color",
+                "name": "Header Banner Background",
+                "find": "#979799"
+            },
+            {
+                "type": "color",
+                "name": "Navigation - Top",
+                "find": "#444445"
+            },
+            {
+                "type": "color",
+                "name": "Header Headline",
+                "find": "#fffffa"
+            },
+            {
+                "type": "color",
+                "name": "Featured Links",
+                "find": "#fffffc"
+            },
+            {
+                "type": "color",
+                "name": "Buttons",
+                "find": "#e05b49"
+            },
+            {
+                "type": "color",
+                "name": "Buttons Hover",
+                "find": "#b7301a"
+            },
+            {
+                "type": "color",
+                "name": "Buttons Text",
+                "find": "#fffffb"
+            },
+            {
+                "type": "color",
+                "name": "Line Dividers",
+                "find": "#bbbbbb"
+            },
+            {
+                "type": "color",
+                "name": "Social Media Buttons",
+                "find": "#bbbbbc"
+            },
+            {
+                "type": "color",
+                "name": "Navigation - Bottom",
+                "find": "#444454"
+            },
+            {
+                "type": "color",
+                "name": "Copyright Background",
+                "find": "#444441"
+            },
+            {
+                "type": "color",
+                "name": "Copyright Text Color",
+                "find": "#fffff7"
+            },
+            {
+                "type": "color",
+                "name": "Copyright Link Hover",
+                "find": "#a1a1a1"
+            }
+        ]
+    },
+    "variables": {
+        "facebookShareURL": {
+          "variable": "facebookShareURL",
+          "dafault": "",
+          "name": "The URL to share on Facebook. Leave blank to share the current page."
+        },
+        "twitterShareURL": {
+          "variable": "twitterShareURL",
+          "dafault": "",
+          "name": "The URL to share on Twitter. Leave blank to share the current page."
+        },
+        "googleShareURL": {
+          "variable": "googleShareURL",
+          "dafault": "",
+          "name": "The URL to share on Google+. Leave blank to share the current page."
+        },
+        "linkedInShareURL": {
+          "variable": "linkedInShareURL",
+          "dafault": "",
+          "name": "The URL to share on LinkedIn. Leave blank to share the current page."
+        }
+    },
+    "elements": [
+        {
+            "id": "header-container",
+            "name": "Header",
+            "type": "container"
+        },
+        {
+            "id": "header-top",
+            "name": "Header Top Container",
+            "type": "container"
+        },
+        {
+            "id": "header-logo", 
+            "name": "Header Logo",
+            "type": "image-link",
+            "data": {
+                "max-width": 240
+            }
+        },
+        {
+            "id": "header-nav",
+            "name": "Header Navigation",
+            "type": "container"
+        },
+        {
+            "id": "header-link-01",
+            "name": "Link 01",
+            "type": "link"
+        },
+        {
+            "id": "header-devider-01",
+            "name": "Divider 01",
+            "type": "container"
+        },
+        {
+            "id": "header-link-02",
+            "name": "Link 02",
+            "type": "link"
+        },
+        {
+            "id": "header-devider-02",
+            "name": "Divider 02",
+            "type": "container"
+        },
+        {
+            "id": "header-link-03",
+            "name": "Link 03",
+            "type": "link"
+        },
+        {
+            "id": "header-devider-03",
+            "name": "Divider 03",
+            "type": "container"
+        },
+        {
+            "id": "header-link-04",
+            "name": "Link 04",
+            "type": "link"
+        },
+        {
+            "id": "header-devider-04",
+            "name": "Divider 04",
+            "type": "container"
+        },
+        {
+            "id": "header-link-05",
+            "name": "Link 05",
+            "type": "link"
+        },
+        {
+            "id": "header-devider-05",
+            "name": "Divider 05",
+            "type": "container"
+        },
+        {
+            "id": "header-link-06",
+            "name": "Link 06",
+            "type": "link"
+        },
+        {
+            "id": "header-banner",
+            "name": "Header Banner",
+            "type": "container"
+        },
+        {
+            "id": "banner-heading",
+            "name": "Banner Heading",
+            "type": "text"
+        },
+        {
+            "id": "banner-links",
+            "name": "Banner Links",
+            "type": "container"
+        },
+        {
+            "id": "icon-01",
+            "name": "Flag Icon",
+            "type": "container"
+        },
+        {
+            "id": "banner-link-01",
+            "name": "Banner Link 01",
+            "type": "link"
+        },
+        {
+            "id": "icon-02",
+            "name": "Tag Icon",
+            "type": "container"
+        },
+        {
+            "id": "banner-link-02",
+            "name": "Banner Link 02",
+            "type": "link"
+        },
+        {
+            "id": "icon-03",
+            "name": "Star Icon",
+            "type": "container"
+        },
+        {
+            "id": "banner-link-03",
+            "name": "Banner Link 03",
+            "type": "link"
+        },
+        {
+            "id": "header-background",
+            "name": "Header Background Image",
+            "type": "image",
+            "data": {
+                "max-width": 1500
+            }
+        },
+        {
+            "id": "main-cta",
+            "name": "Main Button",
+            "type": "link"
+        },
+        {
+            "id": "line-01",
+            "name": "Divider Line",
+            "type": "container"
+        },
+        {
+            "id": "main-intro",
+            "name": "Introduction Container",
+            "type": "container"
+        },
+        {
+            "id": "intro-headline",
+            "name": "Intro Headline",
+            "type": "text"
+        },
+        {
+            "id": "intro-copy",
+            "name": "Intro Text",
+            "type": "text"
+        },
+        {
+            "id": "intro-image",
+            "name": "Intro Photo",
+            "type": "image",
+            "data": {
+                "max-width": 312
+            }
+        },
+        {
+            "id": "line-02",
+            "name": "Divider Line",
+            "type": "container"
+        },
+        {
+            "id": "content-section-01",
+            "name": "Section 01",
+            "type": "container"
+        },
+        {
+            "id": "section-01-headline",
+            "name": "Headline",
+            "type": "text"
+        },
+        {
+            "id": "section-01-item-01",
+            "name": "Item 01",
+            "type": "container"
+        },
+        {
+            "id": "S1I1-graphic",
+            "name": "Item 01 Graphic",
+            "type": "image",
+            "data": {
+                "max-width": 200
+            }
+        },
+        {
+            "id": "S1I1-info",
+            "name": "Item 01 Text",
+            "type": "container"
+        },
+        {
+            "id": "S1I1-heading",
+            "name": "Item 01 Heading",
+            "type": "text"
+        },
+        {
+            "id": "S1I1-copy",
+            "name": "Item 01 Copy",
+            "type": "text"
+        },
+        {
+            "id": "S1I1-button",
+            "name": "Item 01 Button",
+            "type": "link"
+        },
+        {
+            "id": "section-01-item-02",
+            "name": "Item 02",
+            "type": "container"
+        },
+        {
+            "id": "S1I2-graphic",
+            "name": "Item 02 Graphic",
+            "type": "image",
+            "data": {
+                "max-width": 200
+            }
+        },
+        {
+            "id": "S1I2-info",
+            "name": "Item 02 Text",
+            "type": "container"
+        },
+        {
+            "id": "S1I2-heading",
+            "name": "Item 02 Heading",
+            "type": "text"
+        },
+        {
+            "id": "S1I2-copy",
+            "name": "Item 02 Copy",
+            "type": "text"
+        },
+        {
+            "id": "S1I2-button",
+            "name": "Item 01 Button",
+            "type": "link"
+        },
+        {
+            "id": "section-01-item-03",
+            "name": "Item 03",
+            "type": "container"
+        },
+        {
+            "id": "S1I3-graphic",
+            "name": "Item 03 Graphic",
+            "type": "image",
+            "data": {
+                "max-width": 200
+            }
+        },
+        {
+            "id": "S1I3-info",
+            "name": "Item 03 Text",
+            "type": "container"
+        },
+        {
+            "id": "S1I3-heading",
+            "name": "Item 03 Heading",
+            "type": "text"
+        },
+        {
+            "id": "S1I3-copy",
+            "name": "Item 03 Copy",
+            "type": "text"
+        },
+        {
+            "id": "S1I3-button",
+            "name": "Item 03 Button",
+            "type": "link"
+        },
+        {
+            "id": "section-01-item-04",
+            "name": "Item 04",
+            "type": "container"
+        },
+        {
+            "id": "S1I4-graphic",
+            "name": "Item 04 Graphic",
+            "type": "image",
+            "data": {
+                "max-width": 200
+            }
+        },
+        {
+            "id": "S1I4-info",
+            "name": "Item 04 Text",
+            "type": "container"
+        },
+        {
+            "id": "S1I4-heading",
+            "name": "Item 04 Heading",
+            "type": "text"
+        },
+        {
+            "id": "S1I4-copy",
+            "name": "Item 04 Copy",
+            "type": "text"
+        },
+        {
+            "id": "S1I4-button",
+            "name": "Item 04 Button",
+            "type": "link"
+        },
+        {
+            "id": "line-03",
+            "name": "Divider Line",
+            "type": "container"
+        },
+        {
+            "id": "content-section-02",
+            "name": "Section 02",
+            "type": "container"
+        },
+        {
+            "id": "section-02-headline",
+            "name": "Headline",
+            "type": "text"
+        },
+        {
+            "id": "section-02-item-01",
+            "name": "Item 01",
+            "type": "container"
+        },
+        {
+            "id": "S2I1-graphic",
+            "name": "Item 01 Graphic",
+            "type": "image",
+            "data": {
+                "max-width": 200
+            }
+        },
+        {
+            "id": "S2I1-info",
+            "name": "Item 01 Text",
+            "type": "container"
+        },
+        {
+            "id": "S2I1-heading",
+            "name": "Item 01 Heading",
+            "type": "text"
+        },
+        {
+            "id": "S2I1-copy",
+            "name": "Item 01 Copy",
+            "type": "text"
+        },
+        {
+            "id": "S2I1-button",
+            "name": "Item 01 Button",
+            "type": "link"
+        },
+        {
+            "id": "section-02-item-02",
+            "name": "Item 02",
+            "type": "container"
+        },
+        {
+            "id": "S2I2-graphic",
+            "name": "Item 02 Graphic",
+            "type": "image",
+            "data": {
+                "max-width": 200
+            }
+        },
+        {
+            "id": "S2I2-info",
+            "name": "Item 02 Text",
+            "type": "container"
+        },
+        {
+            "id": "S2I2-heading",
+            "name": "Item 02 Heading",
+            "type": "text"
+        },
+        {
+            "id": "S2I2-copy",
+            "name": "Item 02 Copy",
+            "type": "text"
+        },
+        {
+            "id": "S2I2-button",
+            "name": "Item 01 Button",
+            "type": "link"
+        },
+        {
+            "id": "section-02-item-03",
+            "name": "Item 03",
+            "type": "container"
+        },
+        {
+            "id": "S2I3-graphic",
+            "name": "Item 03 Graphic",
+            "type": "image",
+            "data": {
+                "max-width": 200
+            }
+        },
+        {
+            "id": "S2I3-info",
+            "name": "Item 03 Text",
+            "type": "container"
+        },
+        {
+            "id": "S2I3-heading",
+            "name": "Item 03 Heading",
+            "type": "text"
+        },
+        {
+            "id": "S2I3-copy",
+            "name": "Item 03 Copy",
+            "type": "text"
+        },
+        {
+            "id": "S2I3-button",
+            "name": "Item 03 Button",
+            "type": "link"
+        },
+        {
+            "id": "section-02-item-04",
+            "name": "Item 04",
+            "type": "container"
+        },
+        {
+            "id": "S2I4-graphic",
+            "name": "Item 04 Graphic",
+            "type": "image",
+            "data": {
+                "max-width": 200
+            }
+        },
+        {
+            "id": "S2I4-info",
+            "name": "Item 04 Text",
+            "type": "container"
+        },
+        {
+            "id": "S2I4-heading",
+            "name": "Item 04 Heading",
+            "type": "text"
+        },
+        {
+            "id": "S2I4-copy",
+            "name": "Item 04 Copy",
+            "type": "text"
+        },
+        {
+            "id": "S2I4-button",
+            "name": "Item 04 Button",
+            "type": "link"
+        },
+        {
+            "id": "line-04",
+            "name": "Divider Line",
+            "type": "container"
+        },
+        {
+            "id": "content-section-03",
+            "name": "Section 03",
+            "type": "container"
+        },
+        {
+            "id": "section-03-headline",
+            "name": "Headline",
+            "type": "text"
+        },
+        {
+            "id": "section-03-item-01",
+            "name": "Item 01",
+            "type": "container"
+        },
+        {
+            "id": "S3I1-graphic",
+            "name": "Item 01 Graphic",
+            "type": "image",
+            "data": {
+                "max-width": 200
+            }
+        },
+        {
+            "id": "S3I1-info",
+            "name": "Item 01 Text",
+            "type": "container"
+        },
+        {
+            "id": "S3I1-heading",
+            "name": "Item 01 Heading",
+            "type": "text"
+        },
+        {
+            "id": "S3I1-copy",
+            "name": "Item 01 Copy",
+            "type": "text"
+        },
+        {
+            "id": "S3I1-button",
+            "name": "Item 01 Button",
+            "type": "link"
+        },
+        {
+            "id": "section-03-item-02",
+            "name": "Item 02",
+            "type": "container"
+        },
+        {
+            "id": "S3I2-graphic",
+            "name": "Item 02 Graphic",
+            "type": "image",
+            "data": {
+                "max-width": 200
+            }
+        },
+        {
+            "id": "S3I2-info",
+            "name": "Item 02 Text",
+            "type": "container"
+        },
+        {
+            "id": "S3I2-heading",
+            "name": "Item 02 Heading",
+            "type": "text"
+        },
+        {
+            "id": "S3I2-copy",
+            "name": "Item 02 Copy",
+            "type": "text"
+        },
+        {
+            "id": "S3I2-button",
+            "name": "Item 01 Button",
+            "type": "link"
+        },
+        {
+            "id": "section-03-item-03",
+            "name": "Item 03",
+            "type": "container"
+        },
+        {
+            "id": "S3I3-graphic",
+            "name": "Item 03 Graphic",
+            "type": "image",
+            "data": {
+                "max-width": 200
+            }
+        },
+        {
+            "id": "S3I3-info",
+            "name": "Item 03 Text",
+            "type": "container"
+        },
+        {
+            "id": "S3I3-heading",
+            "name": "Item 03 Heading",
+            "type": "text"
+        },
+        {
+            "id": "S3I3-copy",
+            "name": "Item 03 Copy",
+            "type": "text"
+        },
+        {
+            "id": "S3I3-button",
+            "name": "Item 03 Button",
+            "type": "link"
+        },
+        {
+            "id": "section-03-item-04",
+            "name": "Item 04",
+            "type": "container"
+        },
+        {
+            "id": "S3I4-graphic",
+            "name": "Item 04 Graphic",
+            "type": "image",
+            "data": {
+                "max-width": 200
+            }
+        },
+        {
+            "id": "S3I4-info",
+            "name": "Item 04 Text",
+            "type": "container"
+        },
+        {
+            "id": "S3I4-heading",
+            "name": "Item 04 Heading",
+            "type": "text"
+        },
+        {
+            "id": "S3I4-copy",
+            "name": "Item 04 Copy",
+            "type": "text"
+        },
+        {
+            "id": "S3I4-button",
+            "name": "Item 04 Button",
+            "type": "link"
+        },
+        {
+            "id": "line-05",
+            "name": "Divider Line",
+            "type": "container"
+        },
+        {
+            "id": "footer-container",
+            "name": "Footer Container",
+            "type": "container"
+        },
+        {
+            "id": "footer-social",
+            "name": "Social Sharing Buttons",
+            "type": "container"
+        },
+        {
+            "id": "share-facebook",
+            "name": "Facebook Share",
+            "type": "dynamic",
+            "data": {
+                "variables": ["facebookShareURL"]
+            }
+        },
+        {
+            "id": "share-twitter",
+            "name": "Twitter Share",
+            "type": "dynamic",
+            "data": {
+                "variables": ["twitterShareURL"]
+            }
+        },
+        {
+            "id": "share-linkedin",
+            "name": "LinkedIn Share",
+            "type": "dynamic",
+            "data": {
+                "variables": ["linkedInShareURL"]
+            }
+        },
+        {
+            "id": "share-google",
+            "name": "Google+ Share",
+            "type": "dynamic",
+            "data": {
+                "variables": ["googleShareURL"]
+            }
+        },
+        {
+            "id": "footer-logo",
+            "name": "Footer Logo",
+            "type": "image-link",
+            "data": {
+                "max-width": 240
+            }
+        },
+        {
+            "id": "footer-nav",
+            "name": "Footer Navigation",
+            "type": "container"
+        },
+        {
+            "id": "footer-nav-01",
+            "name": "Navigation Link 01",
+            "type": "link"
+        },
+        {
+            "id": "footer-divider-01",
+            "name": "Navigation Divider 01",
+            "type": "container"
+        },
+        {
+            "id": "footer-nav-02",
+            "name": "Navigation Link 02",
+            "type": "link"
+        },
+        {
+            "id": "footer-divider-02",
+            "name": "Navigation Divider 02",
+            "type": "container"
+        },
+        {
+            "id": "footer-nav-03",
+            "name": "Navigation Link 03",
+            "type": "link"
+        },
+        {
+            "id": "footer-divider-03",
+            "name": "Navigation Divider 03",
+            "type": "container"
+        },
+        {
+            "id": "footer-nav-04",
+            "name": "Navigation Link 04",
+            "type": "link"
+        },
+        {
+            "id": "footer-divider-04",
+            "name": "Navigation Divider 04",
+            "type": "container"
+        },
+        {
+            "id": "footer-nav-05",
+            "name": "Navigation Link 05",
+            "type": "link"
+        },
+        {
+            "id": "footer-divider-05",
+            "name": "Navigation Divider 05",
+            "type": "container"
+        },
+        {
+            "id": "footer-nav-06",
+            "name": "Navigation Link 06",
+            "type": "link"
+        },
+        {
+            "id": "copyright-container",
+            "name": "Copyright Container",
+            "type": "container"
+        },
+        {
+            "id": "copyright-copy",
+            "name": "Copyright Copy",
+            "type": "text"
+        }
+    ],
+
+    "form": {}
+
+}
